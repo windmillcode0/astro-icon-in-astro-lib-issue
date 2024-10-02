@@ -23,7 +23,11 @@ export default function issueLib(): StarlightPlugin {
         }
 
         updatedConfig.components.Sidebar ='issue-lib/overrides/Sidebar.astro';
-        addIntegration(icon())
+        addIntegration(    icon({
+          include:{
+            mdi:["chevron-left","chevron-right","chevron-down"]
+          }
+        }))
         updateConfig(updatedConfig);
       },
     },
