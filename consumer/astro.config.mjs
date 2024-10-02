@@ -47,7 +47,11 @@ export default defineConfig({
   outDir: 'docs',
   integrations: [
     overrideIntegration(),
-    icon(),
+    icon({
+      include:{
+        mdi:["chevron-left","chevron-right","chevron-down"]
+      }
+    }),
     starlight({
       title: 'Starlight',
       favicon: '/favicon.svg',

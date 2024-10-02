@@ -7,8 +7,7 @@
   "type": "module",
   "exports": {
       ".": "./index.ts",
-      "./overrides/Sidebar.astro": "./overrides/Sidebar.astro",
-      "./package.json": "./package.json"
+      "./overrides/Sidebar.astro": "./overrides/Sidebar.astro"
   },
   "scripts": {},
   "dependencies": {
